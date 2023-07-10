@@ -1,0 +1,33 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+<title> WELCOME TO OUR HOME PAGE  </title>
+{% endblock title %}
+
+{% block content %}
+<div class="container ">
+    <h1 style='text-align:center'> WELCOME TO THE TASKMASTER  </h1>
+    <div class="row mt-5">
+      <div class="col-lg-4">
+         <img src="{% static 'images/notes.jpg' %}" alt='notes'  width='400' height='250'>
+      </div>
+      <div class="col-lg-4">
+         <img src="{% static 'images/notes.jpg' %}" alt='notes'  width='400' height='250'>
+      </div>
+      <div class="col-lg-4">
+         <img src="{% static 'images/notes.jpg' %}" alt='notes'  width='400' height='250'>
+      </div>
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-md-10 offset-md-1">
+           <center><p class="h1 text-primary">"Achieve your goals, one task at a time. Taskmaster keeps you focused and on track."</p></center>
+            <center><p class="h2 mt-3">"Stay organized, stay ahead. simplifies your life and empowers your productivity."</p></center>
+
+            <center><a href="{% url 'todolist' %}"<button type="button" class="btn btn-outline-info">Let's Go</a></button></center>
+        </div>
+        
+    </div>    
+  </div>
+{% endblock content %}
